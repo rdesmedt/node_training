@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p #{message}
+  br
+  form(action='/login',method='post')
+   |username: 
+   input(type='text', name='user')
+   br
+   |password: 
+   input(type='password', name='pass')
+   br
+   input(type='submit', value='login')
